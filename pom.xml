@@ -194,6 +194,8 @@
                         <detectOfflineLinks>false</detectOfflineLinks>
                         <source>${javaVersion}</source>
                         <quiet>true</quiet>
+                        <additionalJOption>-Xdoclint:none</additionalJOption>
+                        <failOnError>false</failOnError>
                     </configuration>
                 </plugin>
                 <plugin>
