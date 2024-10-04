@@ -364,6 +364,8 @@
                                     artifactId = 'java15-sun'
                                 } else if (javaVersion == '1.6') {
                                     artifactId = 'java16-sun'
+                                } else if (javaVersion == '11') {
+                                    artifactId = 'java11-sun'
                                 }
                                 project.properties['signatureArtifactId'] = artifactId
                                 project.properties['signatureVersion'] = '1.0'
@@ -515,7 +517,7 @@
         </plugins>
     </reporting>
     <properties>
-        <javaVersion>1.4</javaVersion>
+        <javaVersion>11</javaVersion>
         <baseUrl>http://axis.apache.org/axis/java</baseUrl>
         <baseSiteUrl>scm:svn:https://svn.apache.org/repos/asf/axis/site/axis/java</baseSiteUrl>
     </properties>
